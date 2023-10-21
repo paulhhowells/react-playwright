@@ -1,4 +1,12 @@
 import { test, expect } from '@playwright/test';
+import { baseURL } from '../constants';
+
+test('runs vite', async ({page }) => {
+  await page.goto(baseURL + '/');
+
+  await expect(page).toHaveTitle(/Vite \+ React/);
+  await expect(page.getByRole('heading', { name: 'Vite + React' })).toBeVisible();
+});
 
 test('has title', async ({ page }) => {
   await page.goto('https://playwright.dev/');
