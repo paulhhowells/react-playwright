@@ -10,13 +10,16 @@
     "coverage": "vitest run --coverage",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --fix --ext cjs,js,ts,tsx",
+    "postinstall": "xstate typegen \"./src/**/*.ts?(x)\"",
     "preview": "vite preview",
     "prepare": "husky install"
   },
   "dependencies": {
+    "@xstate/inspect": "^0.8.0",
+    "@xstate/react": "^3.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "xstate": "^4.38.2"
+    "xstate": "^4.38.3"
   },
   "devDependencies": {
     "@playwright/test": "^1.39.0",
