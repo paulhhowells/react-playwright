@@ -2,6 +2,7 @@
   "recommendations": [
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
-    "zixuanchen.vitest-explorer"
+    "zixuanchen.vitest-explorer",
+    "statelyai.stately-vscode"
   ]
 }
