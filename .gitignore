@@ -23,3 +23,6 @@ dist-ssr
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+# xstate
+**/*.typegen.ts
